@@ -1,0 +1,60 @@
+{
+  "name": "standup-cli",
+  "version": "0.0.1",
+  "description": "A CLI for your daily standup post",
+  "main": "build/index.js",
+  "bin": {
+    "standup": "bin/index.js"
+  },
+  "author": {
+    "name": "thiagodelgado111",
+    "email": "thiagodelgado111@gmail.com",
+    "url": "https://github.com/thiagodelgado111"
+  },
+  "files": [
+    "build",
+    "bin"
+  ],
+  "scripts": {
+    "build": "rm -rf build/* && ./node_modules/.bin/babel --copy-files src -d build",
+    "build:prod": "BABEL_ENV=production npm run build",
+    "prepare": "npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodelgado111/standup-cli.git"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/thiagodelgado111/standup-cli/issues"
+  },
+  "homepage": "https://github.com/thiagodelgado111/standup-cli#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-proposal-function-sent": "^7.2.0",
+    "@babel/plugin-proposal-json-strings": "^7.2.0",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.17.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "clipboardy": "^1.2.3",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0"
+  }
+}

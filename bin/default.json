@@ -1,0 +1,12 @@
+{
+  "yesterday": {
+    "message": "*1. What did you do yesterday?*"
+  },
+  "today": {
+    "message": "*2. What will you do today?*"
+  },
+  "impediments": {
+    "message": "*3. Are there any impediments in your way?*",
+    "defaultAnswer": "None"
+  }
+}
