@@ -19,6 +19,9 @@ coverage.json
 # Dependency directories
 node_modules/
 
+# Build directory (if added back later)
+build/
+
 # Optional npm cache directory
 .npm
 
@@ -31,8 +34,14 @@ node_modules/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
-.yarn-integrity
-
 # dotenv environment variables file
 .env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

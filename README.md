@@ -11,7 +11,8 @@ npm i -g standup-cli
 ## Usage
 
 It comes pre-configured with a default template that looks like this:
-  ```
+  
+  ```markdown
   *1. What did you do yesterday?*
   - * phew*  a lot of stuff!
   *2. What will you do today?*
@@ -27,8 +28,7 @@ You can go with that:
   // Starts prompting you with questions
   ```
 
-Or specify your own template [using a config file like this](https://github.com/thiagodelgado111/standup-cli/blob/master/src/default.json), passing it as an argument:
-
+Or specify your own template [using a config file like this](bin/default.json), passing it as an argument:
 
   ```sh
   standup ~/standup-template.json
